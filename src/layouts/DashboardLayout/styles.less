@@ -1,0 +1,42 @@
+@import '~antd/lib/style/themes/default.less';
+
+.content {
+  padding: 24px;
+  min-height: ~'calc(100% - 72px)';
+}
+
+.container {
+  height: 100vh;
+  flex: 1;
+  width: ~'calc(100% - 256px)';
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.trigger:hover {
+  color: @link-color;
+}
+
+.logo {
+  display: flex;
+  height: 32px;
+  background: rgba(255,255,255,.2);
+  color: @white;
+  text-transform: uppercase;
+  margin: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: @white;
+  margin-left: 4px;
+}
