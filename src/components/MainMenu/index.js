@@ -69,7 +69,7 @@ class MainMenu extends React.Component {
             title={<MenuLabel {...menu} />}
           >
             {menu.routes.map(submenu => (
-              <MenuItem key={submenu.path} {...submenu} onClick={submenu.path} />
+              <MenuItem key={submenu.path} {...submenu} onClick={this.handleClick(submenu.path)} />
             ))}
           </SubMenu>
         )
